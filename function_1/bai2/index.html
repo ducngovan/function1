@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function2</title>
+</head>
+<body>
+<div>
+    <input type="text" id="a" onchange="input()" />
+    <input type="text" id="b"/>
+</div>
+<script>
+    function augment(num) {
+        return ++num;
+    }
+    function input() {
+        var a =parseInt(document.getElementById('a').value);
+        result=augment(a);
+        document.getElementById('b').value=result;
+    }
+</script>
+</body>
+</html>

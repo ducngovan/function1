@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function 3</title>
+</head>
+<body>
+<div>
+    nhap a: <input type="text" id="a"/> nhap b: <input type="text" id="b" />
+</div>
+<div>
+    <button type="button" onclick="check()">Check</button>
+    <input type="text" id="result" />
+</div>
+<script>
+    function check() {
+            var a = parseInt(document.getElementById('a').value);
+            var b = parseInt(document.getElementById('b').value);
+            document.getElementById('result').value=compare(a,b);
+    }
+
+    function compare(num1,num2){
+        var result;
+        if(num1>num2){
+           result= alert(num1 +" lon hon "+num2);
+
+        }else{
+            result = num1+num2;
+
+        }return result;
+    }
+</script>
+</body>
+</html>

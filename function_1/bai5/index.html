@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function 5</title>
+</head>
+<body>
+<script>
+    var star =['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+    var constellation = ['Ursa', 'Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa','Major','Leo'];
+    var output = prompt("nhap ten ngoi sao: ");
+    var result;
+    for (var i=0; i<star.length; i++) {
+        for (var j = 0; j < constellation.length; j++) {
+            if (output == star[i]) {
+                alert(constellation[i]);
+                break;
+            }
+        }
+    }if (i==star.length) {
+        alert(" khong co chom sao phu hop");
+    }
+
+    // function result() {
+    //     for(let j=0; j<star.length; j++){
+    //
+    //     }
+    //
+    // }
+</script>
+</body>
+</html>
